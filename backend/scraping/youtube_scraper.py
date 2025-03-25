@@ -2,7 +2,7 @@ import requests
 import json
 
 # Load API key from environment variable or config file
-API_KEY = "AIzaSyADfIZVEuyhFU0xLLicljKaVaEKughockw"
+API_KEY = "Your_API_key"
 
 BASE_URL = "https://www.googleapis.com/youtube/v3/search"
 
