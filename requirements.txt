@@ -1,0 +1,10 @@
+streamlit
+requests
+Pillow
+sentence-transformers
+faiss-cpu
+google-generativeai
+python-dotenv
+sqlalchemy
+psycopg2-binary
+beautifulsoup4

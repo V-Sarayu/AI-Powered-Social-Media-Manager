@@ -1,14 +1,13 @@
-import sys
-import os
-sys.path.append(os.path.dirname(os.path.dirname(__file__)))
+from retriever import get_retriever
 
-from rag.retriever import query_events
+retriever = get_retriever()
 
+while True:
+    query = input("Ask something about your club info: ").strip()
+    if query.lower() in {"exit", "quit"}:
+        break
 
-if __name__ == "__main__":
-    query = "generate content for a reinforcement learning workshop"
-    results = query_events(query)
-
-    print("🔍 Top relevant results:")
-    for i, doc in enumerate(results, 1):
-        print(f"{i}. {doc}")
+    nodes = retriever.retrieve(query)
+    print("\nTop Matches:")
+    for i, node in enumerate(nodes, 1):
+        print(f"{i}. {node.text}\n")

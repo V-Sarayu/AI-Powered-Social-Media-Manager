@@ -1,0 +1,15 @@
+Club Name: NeuralHive
+Club Motto: Rewiring Intelligence
+Logo URL: https://example.com/logo.png
+Club Socials: @neuralhive_club
+
+Description: NeuralHive is the official AIML club of our college. It conducts workshops, hackathons, and project showcases focused on Artificial Intelligence, Machine Learning, and Deep Learning.
+
+Common Theme: AI, ML, Deep Learning, Innovation
+
+Recent Events:
+1. RL Rewired: A workshop covering Reinforcement Learning concepts and a hands-on Tic-Tac-Toe game using Q-learning.
+2. Overnight Hackathon: A 24-hour ideation and prototype challenge for real-world AI solutions.
+
+Default Poster Colors: Dark blue, neon green
+Default Hashtags: #NeuralHive #AIMLClub #AIRewired #HackathonVibes

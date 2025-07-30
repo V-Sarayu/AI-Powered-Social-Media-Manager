@@ -1,0 +1,9 @@
+{
+  "name": "CodeCrafters",
+  "about": "A student club for programming and coding enthusiasts.",
+  "logo_url": "path_or_url_to_logo.png",
+  "services": "We organize workshops, hackathons, and coding challenges.",
+  "keywords": ["coding", "programming", "hackathon", "workshop"],
+  "tone": "Friendly and professional",
+  "target_audience": "college students interested in tech and programming"
+}
