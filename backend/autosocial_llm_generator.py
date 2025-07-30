@@ -5,10 +5,21 @@ import re
 from google.generativeai import configure, GenerativeModel
 
 # ============ CONFIGURATION ============
-APIFY_API_KEY = "apify_api_mQCU1Mjo4xuKfAnxMztvno9jlrioMY2rDCM3"
-YOUTUBE_API_KEY = "AIzaSyADfIZVEuyhFU0xLLicljKaVaEKughockw"
-GEMINI_API_KEY = "AIzaSyAIACDvQEIh_5RxM6H7FZgVhfvZUlAXJaA"
-configure(api_key=GEMINI_API_KEY)
+import os
+from dotenv import load_dotenv
+import google.generativeai as genai
+
+# Load environment variables from .env file
+load_dotenv()
+
+# Retrieve the keys
+APIFY_API_KEY = os.getenv("APIFY_API_KEY")
+YOUTUBE_API_KEY = os.getenv("YOUTUBE_API_KEY")
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
+
+# Configure the Gemini model with your API key
+genai.configure(api_key=GEMINI_API_KEY)
+
 
 # ============ GET INPUT ============
 event_description = input("Enter event description: ").strip()
